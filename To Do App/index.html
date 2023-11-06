@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h2>TODO</h2>
+        <span class="icons">
+          <img
+            class="mode-icon dark-mode-icon"
+            src="images/brightness_3_FILL1_wght100_GRAD-25_opsz24.svg"
+          />
+          <img
+            class="mode-icon light-mode-icon"
+            src="images/light_mode_FILL1_wght100_GRAD-25_opsz24.svg"
+          />
+        </span>
+      </div>
+
+      <div class="todo-input">
+        <input
+          type="text"
+          id="item-todo"
+          class="item-todo"
+          name="item-todo"
+          placeholder="Create a new todo..."
+        />
+      </div>
+
+      <div class="todo-items">
+        <div class="todo-items-list" id="todo-items-list"></div>
+
+        <div class="todo-item-menu">
+          <span class="todo-items-count">
+            <span class="items-left">
+              Items Completed: <span class="num-items-completed">0</span></span
+            >
+            <span class="items-left">
+              Items left: <span class="num-items-left">0</span></span
+            >
+          </span>
+
+          <span class="clear-completed">Clear Completed</span>
+        </div>
+      </div>
+
+      <div class="menu">
+        <button class="menu-item all-btn current-tab">All</button>
+        <button class="menu-item active-btn">Active</button
+        ><button class="menu-item completed-btn">Completed</button>
+      </div>
+    </div>
+
+    <img class="banner-img" src="images/Bitmap.png" />
+  </body>
+</html>
