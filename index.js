@@ -10,7 +10,7 @@ function saveItem(itemName, item) {
 const modeIcon = document.querySelectorAll(".mode-icon");
 const body = document.querySelector("body");
 let lightMode = {
-  lightModeOn: true,
+  lightModeOn: false,
 };
 
 for (const icon of modeIcon) {
@@ -28,7 +28,9 @@ for (const icon of modeIcon) {
 
 function loadDarkMode() {
   const savedMode = JSON.parse(localStorage.getItem("mode"));
-  if (!savedMode.lightModeOn) {
+  if (savedMode.lightModeOn) {
+    body.classList.remove("dark-mode");
+  } else {
     body.classList.add("dark-mode");
   }
 }
