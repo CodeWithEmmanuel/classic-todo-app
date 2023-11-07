@@ -46,7 +46,7 @@ function addToDoItem(item) {
   const todoListEl = `
   <div class="todo-item">
     <span class="check-todo">
-      <img class="check-icon" src="images/done_FILL0_wght400_GRAD0_opsz24.svg" />
+      <img class="check-icon" alt="" src="images/done_FILL0_wght400_GRAD0_opsz24.svg" />
     </span>
     <p class="todo-name">${item}</p>
     <img
