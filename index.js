@@ -51,6 +51,7 @@ function addToDoItem(item) {
     <p class="todo-name">${item}</p>
     <img
       class="delete-todo"
+      alt="delete-item-icon"
       src="images/close_FILL1_wght100_GRAD-25_opsz24.svg"
     />
   </div>`;
@@ -68,7 +69,6 @@ document.addEventListener("keydown", (e) => {
     const todoItem = `${todoInput.value[0].toUpperCase()}${todoInput.value
       .slice(1)
       .toLowerCase()}`;
-    // addToDoItem(todoItem);
     updateToDoList(todoItem);
     loadTodoList(todoListStore);
     todoInput.value = "";
